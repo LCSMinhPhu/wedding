@@ -2,7 +2,7 @@
 import React,{ useState, useEffect } from "react";
 
 export default function WeddingInvitation() {
-  const weddingDate = new Date("2025-06-15T00:00:00").getTime();
+  const weddingDate = new Date("2025-03-15T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 4
