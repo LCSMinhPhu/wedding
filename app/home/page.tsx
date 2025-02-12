@@ -206,7 +206,7 @@ useEffect(() => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 , repeatDelay: 30, repeat: Infinity }}
         className="text-xl md:text-3xl mt-16" style={{fontWeight: '500'}}>Đếm ngược tới ngày cưới</motion.h1>
-        <strong className="mt-12 text-lg px-4 text-center">Tiệc cưới tổ chức ngày 15 tháng 3 năm 2025 nhầm ngày 16 tháng 2 năm Ất Tị<br/></strong>
+        <strong className="mt-12 text-lg px-4 text-center">Tiệc cưới tổ chức lúc 17h30 ngày 15 tháng 3 năm 2025 nhầm ngày 16 tháng 2 năm Ất Tị<br/></strong>
         <div className="flex flex-wrap justify-center gap-2 mt-8">
             {Object.entries(timeLeft).map(([unit, value]) => (
             <motion.div 
