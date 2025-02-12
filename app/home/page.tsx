@@ -139,7 +139,7 @@ useEffect(() => {
                repeatType: "mirror",
              }}
             className="text-3xl md:text-4xl font-bold text-pink-500 flex items-center space-x-2 mt-4">
-                <span>Minh Phu</span>
+                <span>Minh Phú</span>
                 <span className="text-red-500">♥</span>
                 <span>Thu Thủy</span>
             </motion.h2>
@@ -194,7 +194,7 @@ useEffect(() => {
         <img src="/thuthuyavt.png" alt="Thu Thủy" className="object-cover w-full h-full rounded-full" onError={(e) => e.currentTarget.style.display='none'} />
       </div>
       <h3 className="text-2xl md:text-3xl">Thu Thủy</h3>
-      <p className="text-lg text-gray-600 mt-2">Con ông: <span className="font-bold">Phạm Đắc Yên</span><br/>Con bà: <span className="font-bold">Lương Thị Sớn</span></p>
+      <p className="text-lg text-gray-600 mt-2">Con ông: <span className="font-bold">Phạm Đắc Yên</span><br/>Con bà: <span className="font-bold">Lương Thị Sơn</span></p>
     </motion.div>
   </motion.div>
 </div>
@@ -206,7 +206,7 @@ useEffect(() => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 , repeatDelay: 30, repeat: Infinity }}
         className="text-xl md:text-3xl mt-16" style={{fontWeight: '500'}}>Đếm ngược tới ngày cưới</motion.h1>
-        <strong className="mt-12 text-lg px-4 text-center">Tiệc cưới tổ chức ngày 15 tháng 3 năm 2025 nhầm ngày 16 tháng 2 năm Ất Tị<br/></strong>
+        <strong className="mt-12 text-lg px-4 text-center">Tiệc cưới tổ chức lúc 17h30 ngày 15 tháng 3 năm 2025 nhầm ngày 16 tháng 2 năm Ất Tỵ<br/></strong>
         <div className="flex flex-wrap justify-center gap-2 mt-8">
             {Object.entries(timeLeft).map(([unit, value]) => (
             <motion.div 

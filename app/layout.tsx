@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"/>
+        <title>Our Wedding</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
