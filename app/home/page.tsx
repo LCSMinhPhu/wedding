@@ -139,7 +139,7 @@ useEffect(() => {
                repeatType: "mirror",
              }}
             className="text-3xl md:text-4xl font-bold text-pink-500 flex items-center space-x-2 mt-4">
-                <span>Minh Phu</span>
+                <span>Minh Phú</span>
                 <span className="text-red-500">♥</span>
                 <span>Thu Thủy</span>
             </motion.h2>
@@ -194,7 +194,7 @@ useEffect(() => {
         <img src="/thuthuyavt.png" alt="Thu Thủy" className="object-cover w-full h-full rounded-full" onError={(e) => e.currentTarget.style.display='none'} />
       </div>
       <h3 className="text-2xl md:text-3xl">Thu Thủy</h3>
-      <p className="text-lg text-gray-600 mt-2">Con ông: <span className="font-bold">Phạm Đắc Yên</span><br/>Con bà: <span className="font-bold">Lương Thị Sớn</span></p>
+      <p className="text-lg text-gray-600 mt-2">Con ông: <span className="font-bold">Phạm Đắc Yên</span><br/>Con bà: <span className="font-bold">Lương Thị Sơn</span></p>
     </motion.div>
   </motion.div>
 </div>
