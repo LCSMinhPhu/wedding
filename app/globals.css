@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: PlayBall, Helvetica, sans-serif;
+}
+
+.imgWedding {
+  width: 100%;
+  height: 100%;
+}
+
+.mapStyle {
+  color: blue
+}
+
+.mapStyle:focus {
+  opacity: 80%;
+  color: blue
+}
+
+.avatarSession {
+  background-color: #ccc;
+}
