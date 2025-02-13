@@ -39,7 +39,7 @@ export default function WeddingInvitation() {
   const weddingDate = new Date("2025-03-15T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 4
+  const totalSlides = 7
   const [key, setKey] = useState(0);
 //   const [flowerPositions, setFlowerPositions] = useState([]);
 
@@ -205,8 +205,8 @@ useEffect(() => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 , repeatDelay: 30, repeat: Infinity }}
-        className="text-xl md:text-3xl mt-16" style={{fontWeight: '500'}}>Đếm ngược tới ngày cưới</motion.h1>
-        <strong className="mt-12 text-lg px-4 text-center">Tiệc cưới tổ chức lúc 17h30 ngày 15 tháng 3 năm 2025 nhầm ngày 16 tháng 2 năm Ất Tỵ<br/></strong>
+        className="text-xl md:text-3xl mt-16 textShadow" style={{fontWeight: '500'}}>Đếm ngược tới ngày cưới</motion.h1>
+        <strong className="mt-12 text-lg px-4 text-center textShadow">Tiệc cưới tổ chức lúc 17h30 ngày 15 tháng 3 năm 2025 nhầm ngày 16 tháng 2 năm Ất Tỵ<br/></strong>
         <div className="flex flex-wrap justify-center gap-2 mt-8">
             {Object.entries(timeLeft).map(([unit, value]) => (
             <motion.div 
@@ -224,7 +224,7 @@ useEffect(() => {
             </motion.div>
             ))}
         </div>
-        <strong className="mt-12 text-lg px-4 text-center">Địa điểm: Nhà hàng The Chautaur, 20 Đường Phan Văn Trị, phường 1, Gò Vấp, Thành phố Hồ Chí Minh. Sảnh POLLUX<br/><a href='https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+The+Chateau/@10.8225792,106.5486379,11z/data=!4m6!3m5!1s0x317528f0a664a8f7:0xede493b8e23234a5!8m2!3d10.8291893!4d106.6834101!16s%2Fg%2F11bttrnn02?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D' target='_blank' className='text-white underline'>Xem trên Google Maps</a></strong>
+        <strong className="mt-12 text-lg px-4 text-center textShadow">Địa điểm: Nhà hàng The Chauteur, 20 Đường Phan Văn Trị, phường 1, Gò Vấp, Thành phố Hồ Chí Minh. Sảnh POLLUX<br/><a href='https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+Ti%E1%BB%87c+C%C6%B0%E1%BB%9Bi+The+Chateau/@10.8225792,106.5486379,11z/data=!4m6!3m5!1s0x317528f0a664a8f7:0xede493b8e23234a5!8m2!3d10.8291893!4d106.6834101!16s%2Fg%2F11bttrnn02?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D' target='_blank' className='text-white underline'>Xem trên Google Maps</a></strong>
         </div>
 
 
@@ -246,6 +246,15 @@ useEffect(() => {
             <div className="min-w-full">
               <img src="/wedding4.jpg" alt="Wedding Moment 4" className="w-full h-80 md:h-[40rem] object-contain rounded-xl shadow-lg" />
             </div>
+            <div className="min-w-full">
+              <img src="/wedding5.jpg" alt="Wedding Moment 4" className="w-full h-80 md:h-[40rem] object-contain rounded-xl shadow-lg" />
+            </div>
+            <div className="min-w-full">
+              <img src="/wedding6.jpg" alt="Wedding Moment 4" className="w-full h-80 md:h-[40rem] object-contain rounded-xl shadow-lg" />
+            </div>
+            <div className="min-w-full">
+              <img src="/wedding7.jpg" alt="Wedding Moment 4" className="w-full h-80 md:h-[40rem] object-contain rounded-xl shadow-lg" />
+            </div>
           </div>
           <button onClick={() => setCurrentSlide((currentSlide - 1 + totalSlides) % totalSlides)} className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 text-gray rounded-full p-2" style={{ fontSize: '32px', fontWeight: '600'}}>
             &lt;
@@ -258,12 +267,12 @@ useEffect(() => {
 
       {/* Greeting Message */}
       <div id="greeting" className="w-full h-screen flex flex-col items-center text-white justify-center shadow-md text-center scroll-mt-24 p-6 bg-gradient-to-b" style={{ backgroundImage: "url('/wedding4.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <h3 className="text-2xl font-semibold">Kính gữi bạn bè và gia đình</h3>
+        <h3 className="text-2xl font-semibold textShadow">Kính gửi bạn bè và gia đình</h3>
         <motion.div
         variants={typingContainer}
         initial="hidden"
         animate={textControls}
-        className="text-center text-2xl md:text-3xl text-white px-4 max-w-3xl mx-auto"
+        className="text-center text-2xl md:text-3xl text-white px-4 max-w-3xl mx-auto textShadow"
         >
         {greetingText.split("").map((char, index) => (
             <motion.span key={index} variants={typingChild}>
@@ -272,7 +281,7 @@ useEffect(() => {
         ))}
         </motion.div>;
         {/* <strong className="mt-4  text-2xl">Chúng tôi trân trọng kình mời bạn/gia đình đến tham dự bữa tiệc quan trọng của gia đình chúng tôi sự hiện diện của bạn là niềm vinh hạnh của gia đình.</strong> */}
-        <p className="mt-4 text-5xl font-bold">Thank you!</p>
+        <p className="mt-4 text-5xl font-bold textShadow">Thank you!</p>
       </div>
 
 
